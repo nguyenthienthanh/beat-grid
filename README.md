@@ -1,5 +1,10 @@
 # beat-grid
 
+[![npm](https://img.shields.io/npm/v/beat-grid)](https://www.npmjs.com/package/beat-grid)
+[![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](package.json)
+[![types](https://img.shields.io/badge/types-included-blue)](https://www.npmjs.com/package/beat-grid)
+[![license](https://img.shields.io/npm/l/beat-grid)](LICENSE)
+
 Tempo detection and phase-locked beat grids from raw PCM.
 
 **Zero runtime dependencies.** No ffmpeg, no FFT library, no native bindings — four pure
@@ -9,6 +14,15 @@ samples in.
 ```bash
 npm install beat-grid
 ```
+
+```bash
+pnpm add beat-grid     # or
+yarn add beat-grid     # or
+bun add beat-grid
+```
+
+ESM-only, ships its own types. Works in Node ≥ 18, Bun, Deno, workers and the browser —
+there is nothing platform-specific in it.
 
 ## Why
 
@@ -94,6 +108,15 @@ frame energy, not on pitch.
   double the real tempo, pass `expectedBpm`.
 - `hopSize` defaults to 512 samples. Larger is faster and coarser; smaller resolves fast
   material better.
+
+## Links
+
+- **npm** — [npmjs.com/package/beat-grid](https://www.npmjs.com/package/beat-grid)
+- **Source and issues** — [github.com/nguyenthienthanh/beat-grid](https://github.com/nguyenthienthanh/beat-grid)
+- **Releases** — [changelog and tags](https://github.com/nguyenthienthanh/beat-grid/releases)
+
+Extracted from a working AI music-video pipeline, where it replaced a text-declared BPM grid
+with one measured off the actual audio.
 
 ## License
 
