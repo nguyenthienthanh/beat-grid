@@ -1,0 +1,58 @@
+{
+  "name": "beat-grid",
+  "version": "0.1.0",
+  "description": "Tempo detection and phase-locked beat grids from raw PCM. Zero dependencies — no ffmpeg, no FFT library, just pure functions over a Float32Array.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": [
+    "bpm",
+    "tempo",
+    "beat-detection",
+    "beat-tracking",
+    "onset-detection",
+    "audio",
+    "dsp",
+    "pcm",
+    "waveform",
+    "zero-dependency"
+  ],
+  "author": {
+    "name": "Nguyen Thien Thanh",
+    "email": "nguyenthienthanh.kiyoshi@gmail.com",
+    "url": "https://github.com/nguyenthienthanh"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenthienthanh/beat-grid.git"
+  },
+  "homepage": "https://github.com/nguyenthienthanh/beat-grid#readme",
+  "bugs": {
+    "url": "https://github.com/nguyenthienthanh/beat-grid/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}
