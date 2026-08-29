@@ -52,7 +52,7 @@
     "url": "https://github.com/nguyenthienthanh/beat-grid/issues"
   },
   "devDependencies": {
-    "typescript": "^5.6.3",
+    "typescript": "^7.0.0",
     "vitest": "^2.1.4"
   }
 }
