@@ -118,6 +118,10 @@ frame energy, not on pitch.
 Extracted from a working AI music-video pipeline, where it replaced a text-declared BPM grid
 with one measured off the actual audio.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## License
 
 MIT
